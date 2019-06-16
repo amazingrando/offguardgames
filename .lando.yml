@@ -1,0 +1,4 @@
+name: offguardwp
+recipe: wordpress
+config:
+  webroot: wordpress

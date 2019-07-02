@@ -1,0 +1,28 @@
+{
+  "name": "offguardgames",
+  "version": "1.0.0",
+  "description": "The \"_s\" for Timber: a dead-simple theme that you can build from. The primary purpose of this theme is to provide a file structure rather than a framework for markup or styles. Configure your Sass, scripts, and task runners however you would like!",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@storybook/addon-knobs": "^5.1.9",
+    "storybook-twig": "^1.0.4",
+    "twig": "^1.13.3",
+    "twig-loader": "^0.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@storybook/html": "^5.1.9",
+    "babel-loader": "^8.0.6"
+  }
+}

@@ -10,12 +10,24 @@ module.exports = async ({ config, mode }) => {
       test: /\.css$/,
       use: [
         {
+          loader: "style-loader",
+          options: { sourceMap: true }
+        },
+        {
+          loader: "css-loader",
+          options: { sourceMap: true }
+        },
+        {
           loader: "postcss-loader",
           options: {
-            sourceMap: true
+            sourceMap: true,
+            config: {
+              path: "./.storybook/"
+            }
           }
         }
-      ]
+      ],
+      include: path.resolve(__dirname, "../")
     }
   );
 

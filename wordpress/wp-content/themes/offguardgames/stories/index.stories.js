@@ -1,5 +1,4 @@
 import { storiesOf } from "@storybook/html";
-// import './COMPONENT_NAME.css';
 
 const template = require("../templates/test.twig");
 // const data = require('./COMPONENT.json');

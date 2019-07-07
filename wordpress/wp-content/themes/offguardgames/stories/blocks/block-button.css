@@ -1,0 +1,12 @@
+.main .wp-block-button {
+
+}
+
+.main .wp-block-button__link {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.main .wp-block-button__link:hover {
+  opacity: .85;
+}

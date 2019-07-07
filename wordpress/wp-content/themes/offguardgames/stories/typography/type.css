@@ -42,3 +42,11 @@ blockquote.wp-block-quote {
     margin-left: -2rem;
   }
 }
+
+a,
+a:link {
+  color: var(--color-link);
+}
+a:hover {
+  color: var(--color-link);
+}

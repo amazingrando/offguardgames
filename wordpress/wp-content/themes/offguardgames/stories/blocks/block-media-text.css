@@ -1,0 +1,8 @@
+.main .wp-block-media-text {
+  margin: 3rem 0;
+  align-items: stretch;
+}
+
+.main .wp-block-media-text .wp-block-media-text__content {
+  background: var(--color-tan-medium);
+}

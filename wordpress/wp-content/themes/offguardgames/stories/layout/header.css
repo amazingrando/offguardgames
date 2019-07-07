@@ -1,0 +1,25 @@
+.header {
+  background: var(--color-tan-light);
+  position: relative;
+  padding: 1rem 1rem 5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header .logo {
+  margin-right: 3rem;
+  width: 110px;
+}
+
+.header .wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}

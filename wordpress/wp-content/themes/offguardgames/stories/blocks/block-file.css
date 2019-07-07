@@ -1,0 +1,6 @@
+.main .wp-block-file a.wp-block-file__button {
+  background: var(--color-dark);
+}
+.main .wp-block-file a.wp-block-file__button:hover {
+  background: var(--color-dark);
+}

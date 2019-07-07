@@ -9,17 +9,22 @@
     {% block header %}
       <div class="wrapper">
         <h1 class="hdr-logo" role="banner">
-          <a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
+          <a class="hdr-logo-link" href="{{site.url}}" rel="home">
+            <img alt="" class="logo" src="/wp-content/themes/offguardgames/images/offguardlogo.png">
+          </a>
         </h1>
-        <nav class="nav-main" id="nav-main" role="navigation">
-          {% include "menu.twig" with {'menu': menu.get_items} %}
+
+        <nav class="nav-primary" id="nav-primary" role="navigation">
+          {% include "menu.twig" with {'menu': primaryMenu.get_items} %}
         </nav>
-        <!-- #nav -->
       </div>
+      <nav class="nav-secondary" id="nav-secondary" role="navigation">
+        {% include "menu.twig" with {'menu': secondaryMenu.get_items} %}
+      </nav>
     {% endblock %}
   </header>
 
-  <section class="content-wrapper main max-width-container" id="content" role="main">
+  <section class="content-wrapper main max-width-container" id="content" role="main" tabindex="-1">
     <section class="max-width-container__content">
       {% if title %}
         <h1>{{title}}</h1>

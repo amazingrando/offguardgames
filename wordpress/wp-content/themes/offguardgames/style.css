@@ -1,8 +1,10 @@
 /*
- * Theme Name: My Timber Starter Theme
- * Description: Starter Theme to use with Timber
- * Author: Upstatement and YOU!
+ * Theme Name: Off Guard Games
+ * Description: Theme by Amazing Rando
+ * Author: Randy Oest <oest@amazingrando.com>
 */
-.test {
-  background: #555;
-}
+@import 'node_modules/normalize.css/normalize.css';
+@import 'stories/config/vars.css';
+@import 'stories/typography/type.css';
+@import 'stories/layout/layout.css';
+@import 'stories/blocks/block-image.css';

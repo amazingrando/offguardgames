@@ -20,14 +20,11 @@ module.exports = async ({ config, mode }) => {
         {
           loader: "postcss-loader",
           options: {
-            sourceMap: true,
-            config: {
-              path: "./.storybook/"
-            }
+            sourceMap: true
           }
         }
       ],
-      include: path.resolve(__dirname, "../")
+      include: path.resolve(__dirname, "not_exist_path")
     }
   );
 

@@ -1,0 +1,14 @@
+:root {
+  --font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
+  --color-tan: #F0E7D2;
+  --color-tan-medium: #D8D8D8;
+  --color-brown-dark: #423D20;
+  --color-blue:#0084B4;
+  --color-white: #FFF;
+
+  --color-dark: var(--color-brown-dark);
+  --color-link: var(--color-blue);
+
+  --max-width: 700px;
+}

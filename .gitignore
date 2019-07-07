@@ -9,6 +9,8 @@ web/app/uploads/*
 # WordPress
 wordpress/wp-content/uploads
 wordpress/wp-config.php
+wordpress/wp-config.local.php
+wordpress/wp-config.production.php
 
 # Dotenv
 .env

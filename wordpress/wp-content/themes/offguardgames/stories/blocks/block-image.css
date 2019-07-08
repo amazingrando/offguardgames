@@ -3,16 +3,6 @@
   margin-bottom: 2rem;
 }
 
-.main .wp-block-image img {
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  max-width: 100vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-}
-
 .main .wp-block-image figcaption {
   color: var(--color-dark);
 }

@@ -11,6 +11,7 @@ wordpress/wp-content/uploads
 wordpress/wp-config.php
 wordpress/wp-config.local.php
 wordpress/wp-config.production.php
+wordpress/wp-config.production.hold.php
 
 # Dotenv
 .env

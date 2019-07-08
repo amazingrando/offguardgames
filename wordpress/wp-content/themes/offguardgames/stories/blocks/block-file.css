@@ -1,3 +1,7 @@
+.main .wp-block-file a:not(.wp-block-file__button) {
+  word-wrap: break-word;
+}
+
 .main .wp-block-file a.wp-block-file__button {
   background: var(--color-dark);
 }

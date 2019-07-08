@@ -1,7 +1,7 @@
 .header {
   background: var(--color-tan-light);
   position: relative;
-  padding: 1rem 1rem 5rem;
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -15,11 +15,34 @@
 }
 
 .header .logo {
-  margin-right: 3rem;
-  width: 110px;
+  display: block;
+  max-width: 75px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header .logo {
+    max-width: 110px;
+  }
 }
 
 .header .wrapper {
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-column-gap: 1rem;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .header .wrapper {
+    grid-column-gap: 2rem;
+  }
+}
+
+
+.header .wrapper .nav-primary {
+  justify-self: start;
+}
+
+.header .wrapper .mobile-menu {
+  justify-self: end;
 }

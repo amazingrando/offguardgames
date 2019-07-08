@@ -17,6 +17,8 @@
         <nav class="nav-primary" id="nav-primary" role="navigation">
           {% include "menu.twig" with {'menu': primaryMenu.get_items} %}
         </nav>
+
+        <a class="mobile-menu" href="#"><img alt="" src="/wp-content/themes/offguardgames/images/bars.svg"></a>
       </div>
       <nav class="nav-secondary" id="nav-secondary" role="navigation">
         {% include "menu.twig" with {'menu': secondaryMenu.get_items} %}
@@ -48,4 +50,5 @@
     </footer>
     {{ function('wp_footer') }}
   {% endblock %}
-</div></body></html>
+</div>
+<script src="/wp-content/themes/offguardgames/scripts/menu.js"></script></body></html>

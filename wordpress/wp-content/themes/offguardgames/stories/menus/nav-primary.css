@@ -7,7 +7,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2rem;
+  grid-column-gap: .5rem;
 }
 
 .nav-primary ul li {
@@ -21,10 +21,17 @@
   border-radius: 4px;
   display: inline-block;
   box-shadow: 0 4px 4px rgba(0,0,0,.15);
-  width: 153px;
-  height: 77px;
+  width: calc(153px/1.5);
+  height: calc(77px/1.5);
   transform: scale(1);
   transition: all .15s;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-primary ul li a {
+    width: 153px;
+    height: 77px;
+  }
 }
 
 .nav-primary ul li a:hover {

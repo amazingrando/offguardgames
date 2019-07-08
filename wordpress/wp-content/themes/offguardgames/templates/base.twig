@@ -28,13 +28,10 @@
 
   <section class="content-wrapper main max-width-container" id="content" role="main" tabindex="-1">
     <section class="max-width-container__content">
-      {% block pageTitle %}
-        {% if title %}
-          {{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}
-          <h1 class="article-h1">{{title}}</h1>
-        {% endif %}
-      {% endblock pageTitle %}
-
+      {% if title %}
+        {{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}
+        <h1 class="article-h1">{{title}}</h1>
+      {% endif %}
       <div class="wrapper {{sidebar_class}}">
         {% block content %}
           Sorry, no content

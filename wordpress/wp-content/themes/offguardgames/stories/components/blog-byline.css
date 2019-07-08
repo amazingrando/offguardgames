@@ -1,0 +1,13 @@
+.blog-author a {
+  color: var(--color-dark);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-author__image {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 6px;
+}

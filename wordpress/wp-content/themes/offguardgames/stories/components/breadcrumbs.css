@@ -1,0 +1,11 @@
+.main-breadcrumbs {
+  color: var(--color-tan-dark);
+}
+
+.main-breadcrumbs a {
+  color: var(--color-tan-dark);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* <nav id="breadcrumbs" class="main-breadcrumbs"><span><span><a href="http://offguardwp.lndo.site/">Home</a> / <span><a href="http://offguardwp.lndo.site/blog/">Blog</a> / <span class="breadcrumb_last" aria-current="page">Hello world!</span></span></span></span></nav> */

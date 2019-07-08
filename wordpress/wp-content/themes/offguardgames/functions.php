@@ -139,7 +139,6 @@ class StarterSite extends Timber\Site {
 		$twig->addFilter( new Twig_SimpleFilter( 'myfoo', array( $this, 'myfoo' ) ) );
 		return $twig;
 	}
-
 }
 
 new StarterSite();

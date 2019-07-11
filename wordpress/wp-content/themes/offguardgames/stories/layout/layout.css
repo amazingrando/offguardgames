@@ -17,7 +17,7 @@ html, body {
 
 .max-width-container {
   display: grid;
-  grid-template-columns: 1fr minmax(200px, 700px) 1fr;
+  grid-template-columns: 1fr minmax(200px, var(--max-width)) 1fr;
 }
 
 .max-width-container__content {

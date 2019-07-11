@@ -26,24 +26,26 @@
     {% endblock %}
   </header>
 
-  <section class="content-wrapper main max-width-container" id="content" role="main" tabindex="-1">
-    <section class="max-width-container__content">
-      {% if title %}
-        {{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}
-        <h1 class="article-h1">{{title}}</h1>
-      {% endif %}
-      <div class="wrapper {{sidebar_class}}">
-        {% block content %}
-          Sorry, no content
-        {% endblock %}
-      </div>
-      {% if sidebar %}
-        <aside class="layout-sidebar">
-          {{sidebar}}
-        </aside>
-      {% endif %}
+  {% block main %}
+    <section class="content-wrapper main max-width-container" id="content" role="main" tabindex="-1">
+      <section class="max-width-container__content">
+        {% if title %}
+          {{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}
+          <h1 class="article-h1">{{title}}</h1>
+        {% endif %}
+        <div class="wrapper {{sidebar_class}}">
+          {% block content %}
+            Sorry, no content
+          {% endblock %}
+        </div>
+        {% if sidebar %}
+          <aside class="layout-sidebar">
+            {{sidebar}}
+          </aside>
+        {% endif %}
+      </section>
     </section>
-  </section>
+  {% endblock main %}
 
   {% block footer %}
     <footer class="footer" id="footer">

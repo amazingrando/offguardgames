@@ -1,0 +1,19 @@
+{% extends "base.twig" %}
+
+{% block main %}
+  <section class="content-wrapper main sv max-width-container" id="content" role="main" tabindex="-1">
+    <section class="max-width-container__content z-100">
+      <div class="wrapper">
+        <div class="content-wrapper">
+          <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            <section class="article-content">
+              <div class="article-body">
+                {{post.content}}
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+    </section>
+  </section>
+{% endblock main %}

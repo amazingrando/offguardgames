@@ -1,0 +1,43 @@
+.sv {
+  --color-text: var(--color-white);
+  --color-link: var(--color-blue);
+  --max-width: 1100px;
+
+  background: url('./sv-bkg.jpg') no-repeat top left #020204;
+  background-size: 100%;
+  color: var(--color-white);
+  position: relative;
+}
+
+.sv::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  opacity: 0.4;
+}
+
+.sv .pink {
+  color: #F26DB6;
+  font-size: 1.125rem;
+}
+
+.sv__welcome {
+  font-size: 2rem;
+  margin: 3rem 0 0;
+}
+
+.sv__title {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.sv .wp-block-quote {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}

@@ -25,7 +25,7 @@
   }
 
   .nav-secondary li a {
-    color: var(--color-dark);
+    color: var(--color-text);
     display: inline-block;
     text-decoration: none;
     padding: .25rem 0;
@@ -69,7 +69,7 @@
   }
 
   .nav-secondary li a {
-    background: var(--color-dark);
+    background: var(--color-text);
     color: var(--color-white);
     display: inline-block;
     text-decoration: none;

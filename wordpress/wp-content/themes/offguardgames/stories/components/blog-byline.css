@@ -1,3 +1,7 @@
+.blog-author {
+  margin-bottom: 3rem;
+}
+
 .blog-author a {
   color: var(--color-dark);
   font-weight: bold;

@@ -7,7 +7,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: .5rem;
+  grid-column-gap: 1rem;
 }
 
 .nav-primary ul li {
@@ -17,7 +17,6 @@
 }
 
 .nav-primary ul li a {
-  background: var(--color-tan);
   border-radius: 4px;
   display: inline-block;
   box-shadow: 0 4px 4px rgba(0,0,0,.15);
@@ -36,4 +35,26 @@
 
 .nav-primary ul li a:hover {
   transform: scale(1.05)
+}
+
+/* Scum and Villainy */
+.menu-item-17 a {
+  background: url('./sv-menu.jpg') no-repeat top left;
+  background-size: contain;
+
+  /* Hide the text. */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Band of Blades */
+.menu-item-16 a {
+  background: url('./bb-menu.jpg') no-repeat top left;
+  background-size: contain;
+
+  /* Hide the text. */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }

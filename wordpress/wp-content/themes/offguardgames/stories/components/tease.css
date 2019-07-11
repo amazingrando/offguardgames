@@ -1,0 +1,22 @@
+.tease {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--color-tan-medium);
+}
+
+@media only screen and (min-width: 600px) {
+  .tease__with-image {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+.tease__thumbnail {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.tease__headline {
+  margin-top: 0;
+}

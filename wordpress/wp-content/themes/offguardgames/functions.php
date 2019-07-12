@@ -142,3 +142,8 @@ class StarterSite extends Timber\Site {
 }
 
 new StarterSite();
+
+function custom_gutenberg_editor_stylesheet() {
+	wp_enqueue_style( 'custom-gutenberg-stylesheet', get_template_directory_uri() . '/stories/config/admin.css', array(), wp_get_theme()->get( 'Version' ), 'all' );
+}
+add_action( 'enqueue_block_editor_assets', 'custom_gutenberg_editor_stylesheet' );

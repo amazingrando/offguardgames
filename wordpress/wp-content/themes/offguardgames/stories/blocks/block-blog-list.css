@@ -1,0 +1,34 @@
+.wp-block-column.product-blog-list {
+}
+
+.wp-block-column.product-blog-list h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.product-blog-list .wp-block-latest-posts {
+  margin: 0;
+  padding: 0;
+}
+
+.product-blog-list .wp-block-latest-posts li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-blog-list .wp-block-latest-posts a {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.product-blog-list .wp-block-latest-posts a:hover {
+  text-decoration: underline;
+}
+
+.product-blog-list .wp-block-latest-posts time {
+  color: var(--color-white);
+  opacity: 0.6;
+}

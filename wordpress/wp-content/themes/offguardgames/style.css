@@ -18,6 +18,7 @@
 @import 'stories/blocks/block-file.css';
 @import 'stories/blocks/block-media-text.css';
 @import 'stories/blocks/block-button.css';
+@import 'stories/blocks/block-blog-list.css';
 @import 'stories/components/blog-byline.css';
 @import 'stories/components/breadcrumbs.css';
 @import 'stories/components/tease.css';

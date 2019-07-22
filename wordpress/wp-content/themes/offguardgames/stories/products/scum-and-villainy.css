@@ -116,6 +116,7 @@
 }
 
 .wp-block-quote.blockquote__under-cover {
+  border: none;
   text-align: center;
   font-size: 1rem;
   font-weight: 600;

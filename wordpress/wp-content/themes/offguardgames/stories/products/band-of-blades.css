@@ -92,9 +92,15 @@
 }
 
 .bob__title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 2rem;
   margin-bottom: 0;
+}
+
+@media (min-width: 500px) {
+  .bob__title {
+    font-size: 4rem;
+  }
 }
 
 .bob__hero-columns .bob__welcome {
@@ -163,10 +169,9 @@
   margin-right: 0.5rem;
 }
 
-https://docs.google.com
-
 /* Blockquote */
 blockquote.wp-block-quote__bob {
+  border: none;
   text-align: center;
   margin-left: 0;
   margin-top: 5rem;
@@ -365,7 +370,12 @@ blockquote.wp-block-quote__bob cite {
 }
 
 .bob .wp-block-embed-youtube {
+  margin: 0;
   text-align: center;
+}
+
+.bob .wp-block-embed-youtube iframe {
+  max-width: 100%;
 }
 
 .bob .actual-play-links {

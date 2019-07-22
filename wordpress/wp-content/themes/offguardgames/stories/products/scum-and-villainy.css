@@ -5,7 +5,7 @@
   --color-purple: #5a378c;
   --max-width: 1100px;
 
-  background: url("./sv-bkg.jpg") no-repeat top left #020204;
+  background: url("./sv-bkg.jpg") top left #020204;
   background-size: 100%;
   color: var(--color-white);
   position: relative;
@@ -22,7 +22,17 @@
   opacity: 0.4;
 }
 
+.sv img {
+  display: block;
+}
+
 /* Hero area */
+@media (min-width: 500px) {
+  .sv__hero-columns {
+    padding: 0 2rem
+  }
+}
+
 .sv__hero-columns > .wp-block-column:first-child {
   flex-basis: calc(100% * 0.6);
   flex-grow: 1;
@@ -55,6 +65,10 @@
   height: auto;
 }
 
+.sv__hero-columns figure img {
+  height: auto;
+}
+
 @media (min-width: 850px) {
   .sv__hero-columns .small-cover {
     display: none;
@@ -80,6 +94,7 @@
   color: #f26db6;
   font-size: 1.425rem;
   line-height: 1.2;
+  margin-top: 2rem;
 }
 
 .sv__title {
@@ -129,6 +144,19 @@
 .sv_downloads a[href$=".pdf"]::before {
   content: "";
   background: url("./pdf.svg") no-repeat top left;
+  width: 12px;
+  height: 16px;
+  display: block;
+  float: left;
+  position: relative;
+  top: 4px;
+  margin-right: 0.5rem;
+}
+
+.sv_downloads a[href^="https://docs.google.com"]::before {
+  content: "";
+  background: url("./docs.svg") no-repeat top left;
+  background-size: contain;
   width: 12px;
   height: 16px;
   display: block;
@@ -200,10 +228,6 @@ blockquote.wp-block-quote__sv cite {
 
 
 /* media block */
-.wp-block-media-text__sv {
-  background: red;
-}
-
 .wp-block-media-text.wp-block-media-text__sv .wp-block-media-text__media {
   position: relative;
 }
@@ -217,6 +241,9 @@ blockquote.wp-block-quote__sv cite {
 .wp-block-media-text.wp-block-media-text__sv .wp-block-media-text__content {
   background: var(--color-maroon);
   padding: 8%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
 }
 
 .sv .wp-block-columns.faux-side-by-side .wp-block-column.purple {
@@ -232,6 +259,7 @@ blockquote.wp-block-quote__sv cite {
 
 .wp-block-media-text.wp-block-media-text__sv .wp-block-media-text__content h3 {
   font-size: 2rem;
+  font-weight: normal;
 }
 
 
@@ -287,6 +315,7 @@ blockquote.wp-block-quote__sv cite {
 
 .sv .wp-block-columns.faux-side-by-side h3 {
   font-size: 1.8rem;
+  font-weight: normal;
   margin-top: 0;
 }
 

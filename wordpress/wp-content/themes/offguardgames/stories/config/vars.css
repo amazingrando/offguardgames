@@ -9,6 +9,7 @@
   --color-blue:#0084B4;
   --color-white: #FFF;
 
+  --color-dark: var(--color-brown-dark);
   --color-text: var(--color-brown-dark);
   --color-link: var(--color-blue);
 

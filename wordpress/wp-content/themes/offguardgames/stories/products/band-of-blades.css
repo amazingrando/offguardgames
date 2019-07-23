@@ -185,6 +185,11 @@ blockquote.wp-block-quote__bob p {
   margin-bottom: 0;
 }
 
+blockquote.wp-block-quote__bob a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
 blockquote.wp-block-quote__bob cite {
   font-size: 1.125rem;
   font-style: normal;
@@ -380,6 +385,7 @@ blockquote.wp-block-quote__bob cite {
 
 .bob .actual-play-links {
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 
@@ -395,8 +401,8 @@ blockquote.wp-block-quote__bob cite {
   height: auto;
 }
 
-.hidden {
-  display: none;
+.bob .hidden {
+  display: none !important;
 }
 
 .bob .no-padding {

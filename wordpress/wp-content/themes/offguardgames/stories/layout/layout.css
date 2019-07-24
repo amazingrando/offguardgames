@@ -30,6 +30,10 @@ html, body {
   padding: 1rem 1rem;
 }
 
+.main.no-padding-top {
+  padding-top: 0;
+}
+
 @media only screen and (min-width: 800px) {
   .main {
     padding: 5rem 1rem;
@@ -43,4 +47,8 @@ html, body {
 
 .main .article-h1--with-byline {
   margin-bottom: 0;
+}
+
+.main.main--wide {
+  --max-width: 1000px;
 }

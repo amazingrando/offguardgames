@@ -10,6 +10,7 @@
 @import 'stories/layout/layout.css';
 @import 'stories/layout/header.css';
 @import 'stories/layout/footer.css';
+@import 'stories/layout/home.css';
 @import 'stories/menus/nav-primary.css';
 @import 'stories/menus/nav-secondary.css';
 @import 'stories/blocks/block-image.css';

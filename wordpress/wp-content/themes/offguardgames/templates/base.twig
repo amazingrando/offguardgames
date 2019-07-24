@@ -27,7 +27,7 @@
   </header>
 
   {% block main %}
-    <section class="content-wrapper main max-width-container" id="content" role="main" tabindex="-1">
+    <section class="content-wrapper main max-width-container {% block mainClass %}{% endblock mainClass %}" id="content" role="main" tabindex="-1">
       <section class="max-width-container__content">
         {% if title %}
           {{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}

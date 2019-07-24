@@ -7,3 +7,46 @@
   right: 50%;
   width: 100vw;
 }
+
+.main .wp-block-cover__tall h2 {
+  margin: 0 auto;
+  font-size: 3rem;
+  max-width: var(--max-width);
+  line-height: 1;
+}
+
+@media only screen and (min-width: 800px) {
+  .main .wp-block-cover__tall h2 {
+    font-size: 4rem;
+  }
+}
+
+.main .wp-block-cover__tall h3 {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: var(--max-width);
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 800px) {
+  .main .wp-block-cover__tall h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+.main .wp-block-cover__tall {
+  min-height: 70vh;
+}
+
+.main .wp-block-cover__tall .wp-block-cover__inner-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.main .yellow .wp-block-button__link {
+  background: #FFD500;
+  color: var(--color-dark);
+  font-weight: bold;
+}

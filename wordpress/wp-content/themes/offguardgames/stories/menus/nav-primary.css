@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1rem;
 }
 
@@ -51,6 +51,17 @@
 /* Band of Blades */
 .menu-item-16 a {
   background: url('./bb-menu.jpg') no-repeat top left;
+  background-size: contain;
+
+  /* Hide the text. */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* More Games */
+.menu-item-299 a {
+  background: url('./other-games.jpg') no-repeat top left;
   background-size: contain;
 
   /* Hide the text. */

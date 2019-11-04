@@ -1,4 +1,4 @@
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 960px) {
   .nav-secondary {
     display: none;
     margin-top: 1rem;
@@ -33,7 +33,7 @@
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 960px) {
   .nav-secondary {
     color: var(--color-white);
     display: inline-block;

@@ -16,10 +16,12 @@
 
 .header .logo {
   display: block;
-  max-width: 75px;
+  max-width: 50px;
+  position: relative;
+  top: -3px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 710px) {
   .header .logo {
     max-width: 110px;
   }
@@ -28,16 +30,15 @@
 .header .wrapper {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
-  grid-column-gap: 1rem;
+  grid-column-gap: 0.8rem;
   align-items: center;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 710px) {
   .header .wrapper {
     grid-column-gap: 2rem;
   }
 }
-
 
 .header .wrapper .nav-primary {
   justify-self: start;
@@ -45,4 +46,5 @@
 
 .header .wrapper .mobile-menu {
   justify-self: end;
+  min-width: 21px;
 }

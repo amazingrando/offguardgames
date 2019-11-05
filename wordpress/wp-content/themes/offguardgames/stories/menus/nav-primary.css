@@ -7,7 +7,13 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
+  grid-column-gap: .5rem;
+}
+
+@media only screen and (min-width: 710px) {
+  .nav-primary ul {
+    grid-column-gap: 1rem;
+  }
 }
 
 .nav-primary ul li {
@@ -20,13 +26,13 @@
   border-radius: 4px;
   display: inline-block;
   box-shadow: 0 4px 4px rgba(0,0,0,.15);
-  width: calc(153px/1.5);
-  height: calc(77px/1.5);
+  width: calc(153px/2);
+  height: calc(77px/2);
   transform: scale(1);
   transition: all .15s;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 710px) {
   .nav-primary ul li a {
     width: 153px;
     height: 77px;
@@ -60,7 +66,7 @@
 }
 
 /* More Games */
-.menu-item-299 a {
+.menu-item-303 a {
   background: url('./other-games.jpg') no-repeat top left;
   background-size: contain;
 

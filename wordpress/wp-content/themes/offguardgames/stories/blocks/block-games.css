@@ -1,0 +1,20 @@
+.ptam-block-post-grid .ptam-post-grid-items .ptam-block-post-grid-image {
+  margin-bottom: 0;
+}
+
+.ptam-block-post-grid .ptam-block-post-grid-text .ptam-block-post-grid-title {
+  font-size: 1.5rem;
+}
+
+.game-list .has-thumb {
+  transition: all 0.15s;
+  transform: scale(1);
+}
+
+.game-list .has-thumb:hover {
+  transform: scale(1.05);
+}
+
+.game-list .has-thumb:hover img {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+}

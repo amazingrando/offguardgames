@@ -250,6 +250,7 @@ blockquote.wp-block-quote__bob cite {
   padding: 8%;
   display: flex;
   justify-content: center;
+  align-self: stretch;
   flex-flow: column nowrap;
 }
 

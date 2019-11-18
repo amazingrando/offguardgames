@@ -2,6 +2,17 @@
   margin-bottom: 0;
 }
 
+@media only screen and (min-width: 500px) {
+  .game-list.ptam-block-post-grid div[class*="columns"].is-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .game-list.ptam-block-post-grid div[class*="columns"].is-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .ptam-block-post-grid .ptam-block-post-grid-text .ptam-block-post-grid-title {
   font-size: 1.5rem;
 }
@@ -9,6 +20,11 @@
 .game-list .has-thumb {
   transition: all 0.15s;
   transform: scale(1);
+}
+
+.game-list .has-thumb img {
+  width: 100%;
+  height: auto;
 }
 
 .game-list .has-thumb:hover {

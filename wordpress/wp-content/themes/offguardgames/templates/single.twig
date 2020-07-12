@@ -1,27 +1,28 @@
 {% extends "base.twig" %}
 
 {% block content %}
-  <div class="content-wrapper">
-    <article
-      class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
-      {# <img src="{{ post.thumbnail.src|resize(1200, 300) }}"> #}
-      <section class="article-content">
-        {{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}
-        <h1 class="article-h1 article-h1--with-byline">{{ post.title }}</h1>
-        <p class="blog-author">
+	<!-- single.twig -->
+	<div class="content-wrapper">
+		<article
+			class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
+			{# <img src="{{ post.thumbnail.src|resize(1200, 300) }}"> #}
+			<section class="article-content">
+				{{ function('yoast_breadcrumb', '<nav id="breadcrumbs" class="main-breadcrumbs">','</nav>', false ) }}
+				<h1 class="article-h1 article-h1--with-byline">{{ post.title }}</h1>
+				<p class="blog-author">
 
-          <a href="{{post.author.path}}">
-            <img src="{{post.author.avatar}}" alt="{{ post.author.name }}" class="blog-author__image">
-            {{ post.author.name }}
-          </a>
-          on
-          {{ post.date }}
-        </p>
-        <div class="article-body">
-          {{post.content}}
-        </div>
-      </section>
-    </article>
-  </div>
-  <!-- /content-wrapper -->
+					<a href="{{post.author.path}}">
+						<img src="{{post.author.avatar}}" alt="{{ post.author.name }}" class="blog-author__image">
+						{{ post.author.name }}
+					</a>
+					on
+					{{ post.date }}
+				</p>
+				<div class="article-body">
+					{{post.content}}
+				</div>
+			</section>
+		</article>
+	</div>
+	<!-- /content-wrapper -->
 {% endblock %}
